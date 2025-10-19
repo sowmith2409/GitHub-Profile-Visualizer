@@ -1,0 +1,330 @@
+.loader-container {
+  background-color: #0f172a;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.repo-item-container {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #0f172a;
+  padding-top: 32px;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.details-container {
+  margin-top: 50px;
+  height: 1042px;
+  width: 1140px;
+  background-color: #ffffff0f;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.item-name {
+  font-family: Roboto;
+  font-size: 32px;
+  color: #3b82f6;
+}
+
+.item-para {
+  font-family: Roboto;
+  font-size: 16px;
+  color: #ffffff;
+  margin-top: 0px;
+}
+
+.item-languages-list {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.language-item-01 {
+  background-color: #bb0f5c29;
+  border-radius: 25px;
+  font-size: 16px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.language-item-02 {
+  background-color: #22c55e29;
+  border-radius: 25px;
+  font-size: 16px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.language-item-03 {
+  background-color: #0284c729;
+  border-radius: 25px;
+  font-size: 16px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.language-item-04 {
+  background-color: #f59e0b29;
+  border-radius: 25px;
+  font-size: 16px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.lang-para {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: Roboto;
+  margin: 0px;
+}
+
+.item-star-fork-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 8px;
+}
+
+.item-star-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.item-fork-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.item-star-fork-para {
+  font-family: Roboto;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.commits-issues-count {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: 0px;
+}
+
+.commit-issue-card {
+  height: 68px;
+  width: 161px;
+  border-radius: 4px;
+  border: 1px solid #cbd5e1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.commit-para {
+  font-family: Roboto;
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 0px;
+}
+
+.commit-count {
+  font-family: Roboto;
+  font-size: 16px;
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+.issue-para {
+  font-family: Roboto;
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 0px;
+}
+
+.issue-count {
+  font-family: Roboto;
+  font-size: 16px;
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+.contributes-para {
+  font-family: Roboto;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.contributes-count {
+  font-family: Roboto;
+  font-size: 16px;
+  color: #ffffff;
+  margin-top: 0px;
+}
+
+.contribute-image {
+  height: 40px;
+  width: 40px;
+  border-radius: 24px;
+  border: none;
+}
+
+.contribute-list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.pie-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 350px;
+  width: 400px;
+}
+
+.more-count {
+  background-color: white;
+  color: #0f172a;
+  height: 40px;
+  width: 40px;
+  border-radius: 24px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.Profile-view-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.error-img {
+  height: 274px;
+  width: 560px;
+}
+
+.error-para {
+  font-family: Roboto;
+  font-size: 32px;
+  color: #ffffff;
+}
+
+.try-again-button {
+  background-color: #3b82f6;
+  height: 48px;
+  width: 106px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  border: none;
+}
+
+.response-container {
+  height: 500px;
+  width: 500px;
+}
+
+@media screen and (max-width: 768px) {
+  .details-container {
+    min-height: 850px;
+    width: 350px;
+  }
+  .item-name {
+    font-size: 24px;
+  }
+  .item-para {
+    font-size: 14px;
+  }
+  .language-item-03,
+  .language-item-02,
+  .language-item-03,
+  .language-item-04 {
+    font-size: 10px;
+    padding-right: 8px;
+    padding-left: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+  .item-languages-list {
+    flex-wrap: wrap;
+  }
+  .commits-issues-count {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    margin-left: 0px;
+  }
+  .contributes-para {
+    font-size: 21px;
+  }
+  .contributes-count {
+    font-size: 16px;
+  }
+  .contribute-image {
+    height: 32px;
+    width: 32px;
+  }
+  .contribute-list {
+    gap: 8px;
+  }
+  .more-count {
+    height: 32px;
+    width: 32px;
+    font-size: 12px;
+  }
+  .pie-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    width: 100%;
+    gap: 20px;
+  }
+  .repo-item-container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .response-container {
+    height: 300px;
+    width: 300px;
+  }
+  .pie-container {
+    height: 250px;
+    width: 300px;
+  }
+}

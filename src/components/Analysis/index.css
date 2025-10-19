@@ -1,0 +1,268 @@
+.summary-loader-container {
+  background-color: #0f172a;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.summary-container {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #0f172a;
+  padding-top: 32px;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.no-data-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 210px;
+}
+
+.no-analysis-image {
+  height: 438px;
+  width: 401px;
+}
+
+.no-data-heading {
+  font-family: Roboto;
+  font-size: 32px;
+  color: #ffffff;
+}
+
+.no-data-para {
+  font-family: Roboto;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.analysis-home-button {
+  height: 48px;
+  width: 135px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: #414038;
+  border: none;
+  margin-top: 30px;
+}
+
+.empty-container {
+  margin-top: 210px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.empty-image {
+  height: 274px;
+  width: 561px;
+}
+
+.empty-para {
+  font-family: Roboto;
+  font-size: 32px;
+  color: #ffffff;
+}
+
+.analysis-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.analysis-heading {
+  font-family: Roboto;
+  font-size: 32px;
+  color: #f8fafc;
+}
+
+.line-graph-container {
+  background-color: #132240;
+  border-radius: 12px;
+  height: 363px;
+  width: 1140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.graph-para {
+  font-family: Roboto;
+  font-size: 16px;
+  color: #3b82f6;
+}
+
+.repo-pie-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 0px;
+}
+
+.repo-pie-heading {
+  font-family: Roboto;
+  font-size: 32px;
+  color: #f8fafc;
+  align-self: flex-start;
+}
+
+.repo-align {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 60px;
+  padding-left: 0px;
+}
+
+.commit-pie-container-1 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.commit-pie-container-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-bottom: 100px;
+}
+
+.user-info {
+  align-items: center;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.user-avatar {
+  height: 121px;
+  width: 121px;
+  border: 2px solid #ffffff;
+  border-radius: 60px;
+}
+
+.user-login-heading {
+  font-family: Roboto;
+  font-size: 31px;
+  color: #ffffff;
+}
+
+.retry-button {
+  background-color: #3b82f6;
+  height: 48px;
+  width: 106px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  border: none;
+}
+
+.analysis-empty-image {
+  height: 409px;
+  width: 551px;
+}
+
+@media screen and (max-width: 768px) {
+  .no-analysis-image {
+    height: 226px;
+    width: 206px;
+  }
+  .no-data-container {
+    margin-top: 105px;
+  }
+  .no-data-heading {
+    font-size: 20px;
+  }
+  .no-data-para {
+    font-size: 16px;
+    text-align: center;
+  }
+  .analysis-home-button {
+    height: 32px;
+    width: 99px;
+  }
+  .empty-container {
+    margin-top: 151px;
+  }
+  .empty-image {
+    height: 138px;
+    width: 281px;
+  }
+  .empty-para {
+    font-size: 18px;
+    text-align: center;
+  }
+  .retry-button {
+    height: 32px;
+    width: 82px;
+  }
+  .analysis-empty-image {
+    height: 220px;
+    width: 296px;
+  }
+  .summary-container {
+    padding-left: 25px;
+    padding-right: 25px;
+    height: auto;
+  }
+  .analysis-heading {
+    font-size: 24px;
+    margin-left: 25px;
+  }
+  .analysis-container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .repo-align {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .repo-pie-heading {
+    align-self: center;
+    font-size: 20px;
+  }
+  .commit-pie-container-1 {
+    display: none;
+  }
+  .line-graph-container {
+    background-color: #132240;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .commit-pie-container-2 {
+    display: none;
+  }
+}
