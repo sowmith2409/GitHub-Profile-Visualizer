@@ -36,8 +36,13 @@ class Home extends Component {
     const mySearchValue = JSON.parse(localStorage.getItem('searchValue'))
     try {
       this.setState({fetchStarted: false, isLoader: true})
-      const url = `https://apis2.ccbp.in/gpv/profile-details/${mySearchValue}?api_key=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`
-      const response = await fetch(url)
+      const token = process.env.REACT_APP_GITHUB_TOKEN
+      const url = `https://apis2.ccbp.in/gpv/profile-details/${mySearchValue}`
+      const response = await fetch(url, {
+        headers: {
+          Authorization: `token ${token}`,
+        },
+      })
       const data = await response.json()
       const userDetails = {
         avatarUrl: data.avatar_url,

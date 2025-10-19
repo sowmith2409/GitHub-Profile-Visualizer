@@ -38,8 +38,13 @@ class Repository extends Component {
       this.setState({noData: true, isLoading: false})
     } else {
       try {
-        const url = `https://apis2.ccbp.in/gpv/repos/${mySearchValue}?api_key=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`
-        const response = await fetch(url)
+        const token = process.env.REACT_APP_GITHUB_TOKEN
+        const url = `https://apis2.ccbp.in/gpv/repos/${mySearchValue}`
+        const response = await fetch(url, {
+          headers: {
+            Authorization: `token ${token}`,
+          },
+        })
         const data = await response.json()
         console.log(data)
         const repoList = data.map(each => ({

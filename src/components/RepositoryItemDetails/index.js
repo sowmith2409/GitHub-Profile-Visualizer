@@ -45,8 +45,13 @@ class RepositoriesItemDetails extends Component {
       const {match} = this.props
       const {params} = match
       const {repoName} = params
-      const url = `https://apis2.ccbp.in/gpv/specific-repo/${myUserName}/${repoName}?api_key=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`
-      const response = await fetch(url)
+      const token = process.env.REACT_APP_GITHUB_TOKEN
+      const url = `https://apis2.ccbp.in/gpv/specific-repo/${myUserName}/${repoName}`
+      const response = await fetch(url, {
+        headers: {
+          Authorization: `token ${token}`,
+        },
+      })
       const data = await response.json()
       console.log(data)
       const repoItemDetails = {

@@ -52,8 +52,13 @@ class Analysis extends Component {
       this.setState({isLoading: false, noUserName: true})
     } else {
       try {
-        const url = `https://apis2.ccbp.in/gpv/profile-summary/${mySearchValue}?api_key=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`
-        const response = await fetch(url)
+        const token = process.env.REACT_APP_GITHUB_TOKEN
+        const url = `https://apis2.ccbp.in/gpv/profile-summary/${mySearchValue}`
+        const response = await fetch(url, {
+          headers: {
+            Authorization: `token ${token}`,
+          },
+        })
         const data = await response.json()
         const profileSummary = {
           langCommitCount: data.langCommitCount,
